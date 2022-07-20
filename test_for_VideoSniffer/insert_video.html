@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Insert_Video</title>
+
+    <script type="text/javascript">
+        function insertVideo() {
+			//在demo div中添加video标签
+            //获取demo div标签
+            let deDiv = document.getElementById('demo');
+            //添加video标签
+            let mVideo = document.createElement('VIDEO');
+            //设置video标签各种属性
+            mVideo.setAttribute('width','1000');
+			mVideo.setAttribute('height','750');
+			mVideo.setAttribute('controls','controls');
+			mVideo.setAttribute('playsinline','true');
+			mVideo.setAttribute('src','https://halo-lg.github.io/test_for_VideoSniffer/Jeans.mp4');
+
+            // 把js新建的VIDEO放到Div下
+            deDiv.appendChild(mVideo);
+        }
+    </script>
+</head>
+
+<body>
+<br><br><br>
+<button onclick="insertVideo()">点击获取视频源</button>
+<br><br>
+<div id="demo">
+</div>
+
+</body>
+</html>
